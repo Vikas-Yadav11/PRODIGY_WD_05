@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <p class="subtitle">
+            Check current weather information
+        </p>
+
+        <!-- Search Section -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <button id="locationBtn">
+                📍 My Location
+            </button>
+
+        </div>
+
+
+        <!-- Error Message -->
+        <p id="errorMessage" class="error"></p>
+
+
+        <!-- Weather Card -->
+        <div id="weatherCard" class="weather-card">
+
+            <div class="location">
+
+                <h2 id="cityName">City</h2>
+
+                <span id="country">Country</span>
+
+            </div>
+
+
+            <!-- Weather Icon -->
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+
+            <!-- Weather Condition -->
+            <h3 id="weatherCondition">
+                Weather Condition
+            </h3>
+
+
+            <!-- Temperature -->
+            <div class="temperature">
+
+                <span id="temperature">
+                    --
+                </span>
+
+                <span>°C</span>
+
+            </div>
+
+
+            <p id="feelsLike">
+                Feels like: --°C
+            </p>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <div class="detail">
+
+                    <span class="icon">💧</span>
+
+                    <h4>Humidity</h4>
+
+                    <p id="humidity">
+                        --
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="icon">💨</span>
+
+                    <h4>Wind</h4>
+
+                    <p id="windSpeed">
+                        --
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="icon">🌡️</span>
+
+                    <h4>Pressure</h4>
+
+                    <p id="pressure">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
